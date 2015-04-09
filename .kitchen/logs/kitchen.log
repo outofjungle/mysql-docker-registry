@@ -1,0 +1,230 @@
+I, [2015-04-08T21:13:12.565582 #81973]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T21:13:13.326873 #81973]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-08T21:31:15.334709 #81973]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T21:34:38.181219 #81973]  INFO -- Kitchen: -----> Creating <mysql-docker>...
+I, [2015-04-08T21:35:22.427023 #81973]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T21:38:16.236988 #81973]  INFO -- Kitchen: -----> Kitchen is finished. (25m3.67s)
+I, [2015-04-08T21:50:05.295005 #82898]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T21:50:05.788989 #82898]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T21:50:25.593277 #82898]  INFO -- Kitchen: -----> Kitchen is finished. (0m20.30s)
+I, [2015-04-08T21:51:51.782854 #82965]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T21:51:52.426330 #82965]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T21:52:02.648938 #82965]  INFO -- Kitchen: -----> Kitchen is finished. (0m10.87s)
+I, [2015-04-08T21:54:13.966689 #83042]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T21:54:14.456209 #83042]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+E, [2015-04-08T21:54:22.662008 #83042] ERROR -- Kitchen: Converge failed on instance <mysql-docker>.
+I, [2015-04-08T21:57:31.443104 #83114]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T21:57:31.936779 #83114]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+E, [2015-04-08T21:59:37.603754 #83114] ERROR -- Kitchen: Converge failed on instance <mysql-docker>.
+I, [2015-04-08T22:02:52.676755 #83260]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:02:53.173377 #83260]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+E, [2015-04-08T22:03:15.686128 #83260] ERROR -- Kitchen: Converge failed on instance <mysql-docker>.
+I, [2015-04-08T22:08:57.399844 #83372]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:08:57.893054 #83372]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-08T22:09:01.905147 #83372]  INFO -- Kitchen: -----> Destroying <mysql-docker>...
+I, [2015-04-08T22:09:06.024206 #83372]  INFO -- Kitchen: -----> Kitchen is finished. (0m8.62s)
+I, [2015-04-08T22:09:20.624106 #83455]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:09:21.130896 #83455]  INFO -- Kitchen: -----> Creating <mysql-docker>...
+E, [2015-04-08T22:09:23.364410 #83455] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-08T22:09:23.364454 #83455] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-08T22:09:23.364476 #83455] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'ubuntu-14.04' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'ubuntu-14.04' (v0) for provider: virtualbox
+    default: Downloading: ubuntu-14.04
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/vvenkat/Workspace/mysql-docker-registry/.kitchen/kitchen-vagrant/kitchen-mysql-docker-registry-mysql-docker/ubuntu-14.04
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2015-04-08T22:09:23.364500 #83455] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-08T22:09:23.364521 #83455] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-04-08T22:09:23.364540 #83455] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'ubuntu-14.04' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'ubuntu-14.04' (v0) for provider: virtualbox
+    default: Downloading: ubuntu-14.04
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/vvenkat/Workspace/mysql-docker-registry/.kitchen/kitchen-vagrant/kitchen-mysql-docker-registry-mysql-docker/ubuntu-14.04
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2015-04-08T22:09:23.364573 #83455] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-08T22:09:23.364595 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-04-08T22:09:23.364615 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-04-08T22:09:23.364634 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-04-08T22:09:23.364653 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:250:in `run'
+E, [2015-04-08T22:09:23.364673 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:280:in `run_vagrant_up'
+E, [2015-04-08T22:09:23.364692 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:78:in `create'
+E, [2015-04-08T22:09:23.364743 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-08T22:09:23.364763 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-08T22:09:23.364785 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-04-08T22:09:23.364805 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-04-08T22:09:23.364824 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-04-08T22:09:23.364843 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-04-08T22:09:23.364867 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-08T22:09:23.364890 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-08T22:09:23.364909 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-08T22:09:23.364928 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-08T22:09:23.364947 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-04-08T22:09:23.364968 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-08T22:09:23.365048 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-08T22:09:23.365079 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-08T22:09:23.365121 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-08T22:09:23.365149 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-08T22:09:23.365169 #83455] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-08T22:09:23.365189 #83455] ERROR -- Kitchen: ----------------------
+I, [2015-04-08T22:12:09.511630 #83685]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:12:09.994430 #83685]  INFO -- Kitchen: -----> Creating <mysql-docker>...
+I, [2015-04-08T22:12:53.174756 #83685]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+E, [2015-04-08T22:15:16.780100 #83685] ERROR -- Kitchen: Converge failed on instance <mysql-docker>.
+I, [2015-04-08T22:19:15.786537 #83981]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:19:16.277488 #83981]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-08T22:19:16.280312 #83981]  INFO -- Kitchen: -----> Destroying <mysql-docker>...
+I, [2015-04-08T22:19:20.104270 #83981]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.32s)
+I, [2015-04-08T22:19:27.348566 #84034]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:19:27.845953 #84034]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-08T22:34:07.726888 #84034]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:35:58.195103 #84034]  INFO -- Kitchen: -----> Creating <mysql-docker>...
+I, [2015-04-08T22:36:43.232145 #84034]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:39:35.472180 #84034]  INFO -- Kitchen: -----> Kitchen is finished. (20m8.12s)
+I, [2015-04-08T22:47:54.063804 #85692]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:47:54.812528 #85692]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:48:03.197546 #85692]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:48:17.439012 #85692]  INFO -- Kitchen: -----> Kitchen is finished. (0m23.37s)
+I, [2015-04-08T22:49:14.139155 #85971]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:49:14.647638 #85971]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:49:22.161735 #85971]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:49:29.815446 #85971]  INFO -- Kitchen: -----> Kitchen is finished. (0m15.68s)
+I, [2015-04-08T22:53:12.967412 #86324]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:53:13.739571 #86324]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:53:21.951224 #86324]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:53:29.649297 #86324]  INFO -- Kitchen: -----> Kitchen is finished. (0m16.68s)
+I, [2015-04-08T22:57:21.531696 #86476]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:57:22.304501 #86476]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:57:30.480068 #86476]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:57:38.119397 #86476]  INFO -- Kitchen: -----> Kitchen is finished. (0m16.59s)
+I, [2015-04-08T22:58:37.788889 #86579]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:58:38.293263 #86579]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:58:45.803427 #86579]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:58:55.137017 #86579]  INFO -- Kitchen: -----> Kitchen is finished. (0m17.35s)
+I, [2015-04-08T22:59:22.278395 #86717]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T22:59:22.771037 #86717]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T22:59:30.355209 #86717]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T22:59:37.905031 #86717]  INFO -- Kitchen: -----> Kitchen is finished. (0m15.63s)
+I, [2015-04-08T23:18:46.422919 #1235]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T23:18:47.278805 #1235]  INFO -- Kitchen: -----> Converging <registry-docker>...
+E, [2015-04-08T23:18:49.637330 #1235] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-08T23:18:49.637373 #1235] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-08T23:18:49.637400 #1235] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "127.0.0.1" port 2222]
+E, [2015-04-08T23:18:49.637421 #1235] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-08T23:18:49.637441 #1235] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2015-04-08T23:18:49.637462 #1235] ERROR -- Kitchen: Message: Connection refused - connect(2) for "127.0.0.1" port 2222
+E, [2015-04-08T23:18:49.637483 #1235] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-08T23:18:49.637503 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2015-04-08T23:18:49.637523 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2015-04-08T23:18:49.637543 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2015-04-08T23:18:49.637563 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2015-04-08T23:18:49.637586 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2015-04-08T23:18:49.637607 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2015-04-08T23:18:49.637627 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2015-04-08T23:18:49.637647 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2015-04-08T23:18:49.637667 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2015-04-08T23:18:49.637687 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:184:in `session'
+E, [2015-04-08T23:18:49.637706 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2015-04-08T23:18:49.637727 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:81:in `exec'
+E, [2015-04-08T23:18:49.637747 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2015-04-08T23:18:49.637770 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:46:in `block in converge'
+E, [2015-04-08T23:18:49.637790 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-08T23:18:49.637810 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-08T23:18:49.637830 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-08T23:18:49.637861 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-08T23:18:49.637887 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-08T23:18:49.637908 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-08T23:18:49.637928 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-08T23:18:49.637959 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-08T23:18:49.637983 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-08T23:18:49.638004 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-08T23:18:49.638024 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-08T23:18:49.638043 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-08T23:18:49.638062 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-08T23:18:49.638081 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-08T23:18:49.638100 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-08T23:18:49.638120 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-08T23:18:49.638139 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-08T23:18:49.638161 #1235] ERROR -- Kitchen: /Users/vvenkat/.rvm/gems/ruby-2.1.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-08T23:18:49.638181 #1235] ERROR -- Kitchen: ----------------------
+I, [2015-04-08T23:18:56.068232 #1263]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T23:18:56.558172 #1263]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-08T23:19:01.817081 #1263]  INFO -- Kitchen: -----> Destroying <mysql-docker>...
+I, [2015-04-08T23:19:06.533727 #1263]  INFO -- Kitchen: -----> Kitchen is finished. (0m10.47s)
+I, [2015-04-08T23:19:42.426719 #1380]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T23:19:42.907184 #1380]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-08T23:19:42.909506 #1380]  INFO -- Kitchen: -----> Destroying <mysql-docker>...
+I, [2015-04-08T23:19:42.910652 #1380]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.48s)
+I, [2015-04-08T23:19:52.287779 #1409]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-08T23:19:52.765916 #1409]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-08T23:20:36.115230 #1409]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-08T23:22:11.627449 #1409]  INFO -- Kitchen: -----> Creating <mysql-docker>...
+I, [2015-04-08T23:22:54.084703 #1409]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-08T23:25:11.778487 #1409]  INFO -- Kitchen: -----> Kitchen is finished. (5m19.49s)
+I, [2015-04-09T10:06:41.001263 #4903]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T10:06:41.747665 #4903]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-09T10:06:43.865682 #4903]  INFO -- Kitchen: -----> Destroying <mysql-docker>...
+I, [2015-04-09T10:06:45.909178 #4903]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.91s)
+I, [2015-04-09T10:11:05.569191 #5217]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T10:11:06.035072 #5217]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-09T10:11:47.322196 #5217]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-09T10:12:35.153792 #5217]  INFO -- Kitchen: -----> Creating <mysql-docker>...
+I, [2015-04-09T10:13:18.195337 #5217]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-09T10:14:35.076342 #5217]  INFO -- Kitchen: -----> Kitchen is finished. (3m29.51s)
+I, [2015-04-09T10:31:29.550853 #5920]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T10:31:30.033329 #5920]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-09T10:31:34.215033 #5920]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.66s)
+I, [2015-04-09T10:31:42.993925 #5974]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T10:31:43.478604 #5974]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-09T10:32:23.059798 #5974]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-09T10:33:01.612887 #5974]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-09T10:33:09.186229 #5974]  INFO -- Kitchen: -----> Kitchen is finished. (1m26.19s)
+I, [2015-04-09T12:51:13.814004 #10328]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T12:51:14.469567 #10328]  INFO -- Kitchen: -----> Converging <registry-docker>...
+E, [2015-04-09T12:51:28.710884 #10328] ERROR -- Kitchen: Converge failed on instance <registry-docker>.
+I, [2015-04-09T12:51:42.270544 #10359]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T12:51:42.757693 #10359]  INFO -- Kitchen: -----> Converging <registry-docker>...
+E, [2015-04-09T12:52:58.149575 #10359] ERROR -- Kitchen: Converge failed on instance <registry-docker>.
+I, [2015-04-09T13:05:56.021826 #10744]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:05:56.513331 #10744]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-09T13:07:19.071883 #10744]  INFO -- Kitchen: -----> Converging <mysql-docker>...
+I, [2015-04-09T13:07:28.588883 #10744]  INFO -- Kitchen: -----> Kitchen is finished. (1m32.57s)
+I, [2015-04-09T13:12:05.467141 #10995]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:12:05.944858 #10995]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-09T13:12:10.311846 #10995]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.84s)
+I, [2015-04-09T13:12:15.642642 #11064]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:12:16.126754 #11064]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-09T13:12:56.992089 #11064]  INFO -- Kitchen: -----> Converging <registry-docker>...
+E, [2015-04-09T13:16:17.477047 #11064] ERROR -- Kitchen: Converge failed on instance <registry-docker>.
+I, [2015-04-09T13:29:38.433714 #11630]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:29:38.927014 #11630]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-09T13:31:54.293322 #11630]  INFO -- Kitchen: -----> Kitchen is finished. (2m15.86s)
+I, [2015-04-09T13:33:22.928097 #11697]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:33:23.402008 #11697]  INFO -- Kitchen: -----> Destroying <registry-docker>...
+I, [2015-04-09T13:33:27.505077 #11697]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.58s)
+I, [2015-04-09T13:33:29.671495 #11765]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:33:30.149168 #11765]  INFO -- Kitchen: -----> Creating <registry-docker>...
+I, [2015-04-09T13:34:11.519678 #11765]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-09T13:41:24.405008 #11765]  INFO -- Kitchen: -----> Kitchen is finished. (7m54.73s)
+I, [2015-04-09T13:45:13.332373 #12094]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-09T13:45:13.823096 #12094]  INFO -- Kitchen: -----> Converging <registry-docker>...
+I, [2015-04-09T13:46:29.669356 #12094]  INFO -- Kitchen: -----> Kitchen is finished. (1m16.34s)

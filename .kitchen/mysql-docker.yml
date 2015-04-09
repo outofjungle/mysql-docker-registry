@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+username: vagrant
+ssh_key: "/Users/vvenkat/Workspace/mysql-docker-registry/.kitchen/kitchen-vagrant/kitchen-mysql-docker-registry-mysql-docker/.vagrant/machines/default/virtualbox/private_key"
+port: '2200'
+last_action: converge
